@@ -1,0 +1,10 @@
+# Virtual environment directories and files
+bin/
+lib/
+lib64/
+include/
+pyvenv.cfg
+
+# Caches directoryes
+.pytest_cache
+__pycache__
