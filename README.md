@@ -6,20 +6,21 @@ A tool to evaluate whether the square foot of a structue is large enough
 to require a building permit.
 
 # 📂 Project Structure
+```
 .
-├── data
+├── data/
 │   ├── data_from_user.json
 │   └── permit_requirements.json
 ├── __init__.py
-├── lib64 -> lib
 ├── load_data.py
 ├── main.py
 ├── pyvenv.cfg
 ├── README.md
 ├── structure_approver.py
-└── test
+└── test/
     ├── __init__.py
     ├── load_data_test.py
+```
 
 # 🛠️ Installation
 ## Dependencies
