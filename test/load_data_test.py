@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import mock_open, patch
 import json
-from load_data import JSONLoader 
+from ..load_data import JSONLoader 
 
 class TestJSONLoader(unittest.TestCase):
     def setUp(self):

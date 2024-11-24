@@ -1,6 +1,6 @@
 """The main script for the program."""
 from structure_approver import StructureApprover
-from ..load_data import JSONLoader
+from load_data import JSONLoader
 
 
 def main():
