@@ -18,8 +18,20 @@ Usage:
 """
 
 class StructureApprover:
+    """A class to do approval processes for building projects.
+    
+    Attributes:
+        __structure_size (int): The max size limit of the structure.
+        __permit_requirement_data (int): The max size limit of the structure.
+
+    Methods:
+        set_structure_size(structure_size: dict): Updates the max size limit of the structure.
+        set_permit_requirements(permit_requirements: dict): Updates the max size limit of the structure.
+        get_maximum_size(): Returns the max size limit of the structure.
+        get_structure_size(): Returns the max size limit of the structure.
+        compare_size_to_requirements(): Compares structure size to permit requirements.
+        get_evaluation(): Returns an evaluation of the structure size.
     """
-    A class to do approval processes for building projects."""
     def __init__(self):
 
         self.__structure_size = 0
@@ -73,7 +85,12 @@ class StructureApprover:
             return True
 
     def get_evaluation(self) -> str:
-        """Returns an evaluation of the structure size."""
+        """Returns an evaluation of the structure size.
+        
+        Returns:
+            str: An evaluation of the structure size.
+        """
+
         if self.compare_size_to_requirements():
             return f"The structure is smaller than {self.__permit_requirement_data}㎡. No permit required."
 
