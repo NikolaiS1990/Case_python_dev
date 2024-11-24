@@ -33,7 +33,7 @@ def main():
 
     # Setting the permit requirements
     structure_approver.set_permit_requirements(permit_requirements)
-        # Setting the permit requirements
+    # Setting the permit requirements
     structure_approver.set_structure_size(user_data)
 
     # structure_approver.compare_size_to_requirements()
